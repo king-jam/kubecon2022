@@ -1,0 +1,16 @@
+domain: kubecon.dell.com
+layout:
+- go.kubebuilder.io/v3
+projectName: controller
+repo: github.com/king-jam/kubecon2022/controller
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: kubecon.dell.com
+  group: dell
+  kind: Server
+  path: github.com/king-jam/kubecon2022/controller/api/v1
+  version: v1
+version: "3"

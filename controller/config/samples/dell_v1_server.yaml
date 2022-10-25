@@ -1,0 +1,12 @@
+apiVersion: dell.kubecon.dell.com/v1
+kind: Server
+metadata:
+  labels:
+    app.kubernetes.io/name: server
+    app.kubernetes.io/instance: server-sample
+    app.kubernetes.io/part-of: controller
+    app.kuberentes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: controller
+  name: server-sample
+spec:
+  powerState: "ON"
